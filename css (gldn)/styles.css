@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300;800&display=swap');
+
+body { font-family: 'Exo 2', sans-serif;
+  background-color: #F0D2A0;
+  color: #0CB14B;
+}
+h1 {
+  font-family: 'Exo 2', sans-serif; extrabold-800;
+  color: black;
+  size: 32 pt;
+}
+h3 {
+  font-family: 'Exo 2', sans-serif;
+  color: #F15C28;
+  size: 24 pt;
+}
+p{
+  font-family: 'Exo 2', sans-serif;
+  color: #0CB14B;
+  size: 16 pt;
+  justify: left;
+}
+.navbar{
+  color: #0CB14B;
+  outline: 5 pt;
+}
+.img-fluid{padding: 10pt}
