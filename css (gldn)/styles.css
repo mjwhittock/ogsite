@@ -1,17 +1,66 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300;800&display=swap');
 
+// Add SASS theme customizations here..
+/*! `Custom` Bootstrap 5 theme */
+
+$enable-grid-classes:false;
+$primary:#0D658B;
+$secondary:#0CB14B;
+$success:#F4AB39;
+$danger:#F15C28;
+$info:#F0D2A0;
+$warning:;
+$light:;
+$dark:;
+@import "bootstrap";
+
+// Add SASS theme customizations here..
+html {font-size: .8rem;}
+@include media-breakpoint-up(sm) {html {font-size: .9rem;}}
+@include media-breakpoint-up(md) {html {font-size: .9rem;}}
+@include media-breakpoint-up(lg) {html {font-size: 1rem;}}
+html {font-size: .8rem;}
+@include media-breakpoint-up(sm) {html {font-size: .9rem;}}
+@include media-breakpoint-up(md) {html {font-size: .9rem;}}
+@include media-breakpoint-up(lg) {html {font-size: 1rem;}}
 body { font-family: 'Exo 2', sans-serif;
   background-color: #F0D2A0;
   color: #0CB14B;
+}
+#logo {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 2000;
+  transition: 0.2s;
+}
+
+#logo > img{
+  width: 350px;
 }
 h1 {
   font-family: 'Exo 2', sans-serif; extrabold-800;
   color: black;
   size: 32 pt;
 }
-h3 {
+h2 {
   font-family: 'Exo 2', sans-serif;
   color: #F15C28;
+  size: 24 pt;
+}
+h3 {
+  font-family: 'Exo 2', sans-serif;
+  color: #0CB14B;
+  size: 24 pt;
+}
+h4 {
+  font-family: 'Exo 2', sans-serif;
+  color: #F15C28;
+  size: 36 pt;
+}
+h5 {
+  font-family: 'Exo 2', sans-serif;
+  color: #F3A939;
   size: 24 pt;
 }
 p{
@@ -20,8 +69,91 @@ p{
   size: 16 pt;
   justify: left;
 }
+p2{
+  font-family: 'Exo 2', sans-serif;
+  color: #0CB14B;
+  size: 16 pt;
+  justify: left;
+}
+p3{
+  font-family: 'Exo 2', sans-serif;
+  color: #EFD19F;
+  size: 16 pt;
+  justify: left;
+}
 .navbar{
   color: #0CB14B;
   outline: 5 pt;
 }
-.img-fluid{padding: 10pt}
+.img-fluid{padding: 15pt
+max-width: 100%;
+height: auto;
+object-fit: fill;
+object-position: right;}
+
+.ticker-wrapper{
+  position: relative;
+  max-width: 800 px;
+  margin: auto;
+  padding-top: 10 px;
+  padding-bottom: 10 px;
+  background-color: #0D658B;
+  outline-color: black;
+}
+.button {
+  color: #0D658B;
+  font-weight: bold;
+  font-color: #F4AB39;
+}
+div {
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+}
+.class {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+.btn-primary {
+    color: #F3A939;
+    background-color: #0A658A;
+    border-color: #0A658A;
+}
+.btn-primary:hover {
+    color: #F3A939;
+    background-color: #064159;
+    border-color: #064159;
+}
+.btn-danger {
+    color: #EFD19F;
+    background-color: #F15C28;
+    border-color: #F15C28;
+}
+.btn-danger:hover {
+    color: #EFD19F;
+    background-color: #CC4D21;
+    border-color: #CC4D21;
+
+}
+#footer {
+  background-color: #0CB14B
+}
+
+#footer a:link {
+  color: #EFD19F
+  text-decoration: none;
+}
+
+#footer a:visited {
+  color: #EFD19F
+  text-decoration: none;
+}
+#footer a:hover {
+  color: #B59E77
+  text-decoration: none;
+}
+
+p.solid {border-style: solid;}

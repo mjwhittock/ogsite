@@ -2,34 +2,35 @@
 <html lang="en-us">
   <head>
     <title>GLDN CrossFit</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
 <link href="css (gldn)/styles.css" type="text/css" rel="stylesheet" />
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
     <!-- links to style sheets, google fonts, etc. go here -->
   </head>
   <body>
 
+        <!-- your site content goes here -->
+        <a id="logo" href="#homepage"><img id="logo-img" src="images/gldn-logo.png" alt="Golden CrossFit Logo" > </a>
 
-    <!-- your site content goes here -->
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
-
-      <a class="col-xs-1 col-sm-2 col-md-3 col-lg-4 col-xl-4">
-        <img src="images/gldn-logo.png" class="img-fluid" alt="Golden CrossFit Logo" width="350 p" height="auto"> </a>
-    </a>
-
-
+        <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top" style="background-color: #0CB14B" >
       <div class="container-fluid">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+        <style>
+          body div { border: 5px solid black; }
+        </style>
+        <a class="col-xs-1 col-sm-2 col-md-3 col-lg-4 col-xl-4">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-0 mb-lg-0">
             <li class="nav-item active">
-              <a class="nav-link" href="#">HOME</a>
+              <a class="nav-link" href="#file:///Users/mattwhittock/Documents/GitHub/mjwhittock.github.io/gldn_homepage.html">HOME</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">PROGRAMS</a>
+              <a class="nav-link" href="file:///Users/mattwhittock/Documents/GitHub/mjwhittock.github.io/gldn_programs.html">PROGRAMS</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">TEAM</a>
@@ -50,17 +51,22 @@
         </div>
       </div>
     </nav>
-<!--Top of page-->
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-7">
 
-      <p> We are the premier training facility in California’s Central Valley. Book a class today! <br>
-</p>
+
+<!--Top of page-->
+<div class="container-fluid" style="color: #F4AB39">
+  <div class="row">
+    <div class="col-7" style="background-color: #F3A939">
+      <img src="images/cali-01-01.png" class="img-fluid" alt="California graphic" width="350" height="auto">
+
+      <h3> We are the premier training facility in California’s Central Valley.<br>Book a class today! <br>
+</h3>
       <button type="button" class="btn btn-primary btn-lg">CHECK IT OUT</button>
     </div>
     <div class="col-5">
-      <img src="images/sb.jpeg" class="img-fluid" alt="a man throwing a sandbag over his shoulder" width="max-width" height="auto">
+      <img src="images/sb.jpeg" class="img-fluid" alt="a man throwing a sandbag over his shoulder" width="max-width: 100%" height="auto">
+      <a class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+      </a>
       <span class="border border-dark">
         <span class="border border-3">
         </span>
@@ -69,56 +75,65 @@
   </div>
 
   <!--Ticker-->
-  <section id="word-tick" class="py-md-0" data-aos="fade-in">
-  <ul class="webTicker">
-  <li class="tickitem"><p class="text-#198754">#SeekTheSuck</p></li>
-  </ul>
-  </section>
+
+  <div class="ticker-wrapper">
+    <div class="class">
+    <div class="text-update">
+      <marquee>
+      <p3>#SEEKTHESUCK #STRENGTHTHROUGHSTRUGGLE #LFG</p3>
+    </marquee>
+    </div>
+  </div>
+</div>
 
 <!--Secondary area of homepage-->
   <div class="row">
     <div class="col-5">
-      <img src="images/community1.jpeg" class="img-fluid" alt="a woman being cheered on as she presses weight overhead" width="max-width" height="auto">
+      <img src="images/community1.jpeg" class="img-fluid" alt="a woman being cheered on as she presses weight overhead" width="max-width: 100%" height="auto">
     </div>
     <div class="col-7">
-      <h1 class="display-4">STRENGTH THROUGH STRUGGLE.</h1>
-  <p> GLDN CrossFit is a gym built on the principle that true strength lies on the other side of struggle. We should embrace this challenge to better our lives and the lives of those around us. <br>
-</p>
-<button type="button" class="btn btn-primary btn-lg">LET'S GO</button>
+      <h1 class="display-4"><b>STRENGTH THROUGH STRUGGLE.</b></h1>
+  <h3> GLDN CrossFit is a gym built on the principle that true strength lies on the other side of struggle. We should embrace this challenge to better our lives and the lives of those around us. <br>
+</h3>
+<button type="button" class="btn btn-danger btn-lg">LET'S GO</button>
     </div>
   </div>
 </div>
 
 <!--Footer-->
-<div class="container-fluid">
+<div class="container-fluid" id="footer">
   <div class="row">
-    <div class="col-5">
+    <div class="col-3">
       <a class="navbar-brand" href="#"><img src="images/gldn-logo-2.png" alt="Golden CrossFit alternate logo" width="100 p" height="auto" class="float-end m-2"> </a>
     </div>
     <div class="col-2">
     </div>
     <div class="col-2">
-      <h3>CONNECT</h3>
-<a href="https://www.instagram.com/mjwhittock/">Instagram</a> <br> <a href="https://www.tiktok.com/@mjwhittock">TikTok</a> <br> <a href="https://www.youtube.com/channel/UCYTL8BcwkMxy_umlJ0FprOA">YouTube</a> <br> <a href="https://open.spotify.com/show/77ZHkfmEtIzTgySTJDUoFn?si=ee543cd934134c63">Spotify</a>
+      <h5><b>CONNECT</b></h5>
+<a href="https://www.instagram.com/mjwhittock/"><p4>Instagram</p4></a> <br> <a href="https://www.tiktok.com/@mjwhittock"><p4>TikTok</p4></a> <br> <a href="https://www.youtube.com/channel/UCYTL8BcwkMxy_umlJ0FprOA"><p4>YouTube</p4></a> <br> <a href="https://open.spotify.com/show/77ZHkfmEtIzTgySTJDUoFn?si=ee543cd934134c63"><p4>Spotify</p4></a>
 
     </div>
     <div class="col-1">
     </div>
     <div class="col-2">
-      <h3>COMPANY</h3>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Values</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Careers</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Visit</a>
-      </li>
-
+      <h5><b>COMPANY</b></h5>
+      <a href="#"><p4>Values</p4></a> <br> <a href="#"><p4>Careers</p4></a> <br> <a href="#"><p4>Visit</p4></a>
     </div>
-    <div class="col-1">
+    <div class="col-12">
     </div>
   </div>
 </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script>
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    document.getElementById("logo-img").style.width = "120px";
+  } else {
+    document.getElementById("logo-img").style.width = "300px";
+  }
+}
+</script>
+</body>
 </html>
