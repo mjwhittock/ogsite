@@ -157,3 +157,12 @@ div {
 }
 
 p.solid {border-style: solid;}
+
+.box1 img {
+    object-fit: cover;
+}
+.center {
+  margin: auto;
+  width: 60%;
+  padding: 10px;
+}
