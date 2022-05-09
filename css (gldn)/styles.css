@@ -38,10 +38,19 @@ body { font-family: 'Exo 2', sans-serif;
 #logo > img{
   width: 350px;
 }
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);
 h1 {
   font-family: 'Exo 2', sans-serif; extrabold-800;
   color: black;
   size: 32 pt;
+  text-align: center;
 }
 h2 {
   font-family: 'Exo 2', sans-serif;
@@ -107,23 +116,19 @@ object-position: right;}
 }
 div {
   padding-top: 10px;
-  padding-right: 10px;
-  padding-bottom: 10px;
   padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px
 }
-.class {
-    padding-right: 0 !important;
-    padding-left: 0 !important;
-    padding-top: 0 !important;
-    padding-bottom: 0 !important;
+
 }
 .btn-primary {
-    color: #F3A939;
+    color: #0A658A;
     background-color: #0A658A;
     border-color: #0A658A;
 }
 .btn-primary:hover {
-    color: #F3A939;
+    color: #08597A;
     background-color: #064159;
     border-color: #064159;
 }
